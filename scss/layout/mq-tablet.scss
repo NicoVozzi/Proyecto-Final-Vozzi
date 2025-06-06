@@ -1,0 +1,149 @@
+//variables
+@use "../abstracts/variables" as *;
+//mixin 
+@use "../abstracts/mixin" as *;
+
+/* estilos de tablet */
+
+@media screen and (min-width:800px) and (max-width:1000px){
+    /*estilos de index.html*/
+
+    
+    
+    .info-hero h2{
+        font-size: 35px;
+    }
+
+    .info-hero{
+        @include width2;
+        background-color: $color-secundario;
+        color: $color-body;
+        clip-path: polygon(0 0, 100% 0%,  200%, 0 80%);
+        height: 500px;
+        padding: 2%;
+    }
+
+    .boton-dos{
+        width: 300px;
+        font-size: 1.5rem;
+    }
+
+    .texto-uno{
+        margin-left: 3%;
+        font-size: 30px; 
+    }
+
+    .section-uno .titulo{
+        font-size: 3rem;
+    }
+
+    .section-uno .subtitulo{
+        @include font2;
+    }
+
+    .img-uno{
+        width: 80%;
+    }
+
+    .caja-dos ul{
+        @include flex;
+        flex-direction: column;
+    }
+
+    
+    .caja-dos ul li{
+        @include font2;
+        width: 450px;
+    }
+
+        .subtitulo-tres{
+        @include font2;
+        text-align: center;
+    }
+
+    .container-uno{
+        @include flex;
+        @include margin-top;
+        flex-direction: column;
+    }
+
+    .titulo-dos{
+        font-size: 3rem;
+    }
+
+    .subtitulo-dos{
+        @include font2;
+    }
+
+    
+    .section-dos h3{
+        @include font2;
+    }
+
+    .section-dos p{
+        font-size: 1.5rem;
+        padding: 2%;
+    }
+
+    /* estilos de joinushtml */
+
+    .container-cajas{
+        @include flex2;
+        justify-content: center;
+    }
+
+    .container-cajas{
+        @include width2;
+    }
+
+    .container-cards{
+        width: 90%;
+        height: 600px;
+    }
+
+    .container-cards ul li{
+        font-size: 1.2rem;
+    }
+
+
+    /* estilos de aboutushtml */
+
+    .container{
+        @include width2;
+        gap: 15px;
+    }    
+
+    
+    .container .caja1{
+        width: 350px;
+        padding: 8%;
+    }
+
+    
+    .container .caja2{
+        width: 350px;
+        padding: 10%;
+
+    }
+
+    
+
+    .container .caja3{
+        width: 350px;
+
+    }
+
+    
+
+    .form label{
+        width: 300px;
+    }
+
+    
+    .caja3 div{
+        width: 300px;
+        gap: 30px;
+    }
+
+    
+}

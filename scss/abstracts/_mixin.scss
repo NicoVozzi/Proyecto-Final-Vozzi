@@ -1,0 +1,92 @@
+//mixin
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex2{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex3{
+    display: flex;
+    justify-self: center;
+}
+
+@mixin height{
+    height: 750px;
+}
+
+@mixin radius{
+    border-radius: 20px;
+}
+
+@mixin gap{
+    gap: 30px;
+}
+
+@mixin width{
+    width: 80px;
+}
+
+@mixin width2{
+    width: 100%;
+}
+
+@mixin font{
+    font-size: 1rem;
+}
+
+@mixin font2{
+    font-size: 2rem;
+}
+
+@mixin pointer{
+    cursor: pointer;
+}
+
+@mixin hero{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin btn-dos{
+    margin-left: 2%;
+    width: 200px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 50px;  
+}
+
+@mixin margin-top{
+    margin-top: 50px;
+}
+
+@mixin margin-top2{
+    margin-top: 20px;
+}
+
+@mixin margin-bottom{
+    margin-bottom: 50px;
+}
+
+@mixin lighter{
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+@mixin box-shw{
+    box-shadow: 0px 0px 5px gray;
+}
+
+@mixin grid ($grid, $column, $row){
+    display: $grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+}
+

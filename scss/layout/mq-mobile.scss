@@ -1,0 +1,148 @@
+//variables
+@use "../abstracts/variables" as *;
+//mixin 
+@use "../abstracts/mixin" as *;
+
+/* estilos de mobile */
+
+@media screen and (max-width: 414px){
+    
+    /* estilos de index.html */
+    .texto-uno{
+        margin-left: 10px;
+    }
+
+    .info-hero h2{
+        font-size: medium;
+    }
+
+    .info-hero{
+        @include width2;
+        background-color: $color-secundario;
+        color: $color-body;
+        padding: 2%;
+        height: 500px;
+        clip-path: polygon(0 0, 100% 0%,  200%, 0 80%);
+    }
+
+    .boton-dos{
+        margin-top: 100px;
+    }
+        
+    .texto-uno{
+        margin-top: 100px;
+    }
+
+    .section-uno .subtitulo{
+        font-size: x-large;
+    }
+
+    .subtitulo-tres{
+        text-align: center;
+    }
+
+    .container-uno{
+        @include flex;
+        @include margin-top;
+        flex-direction: column;
+    }
+
+    .section-dos p{
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .img-tres{
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    .caja-dos{
+        width: 90%;
+        margin: 0 5%;       
+    }
+
+    .container-footer{
+        padding: 4%;
+    }
+
+    .container-footer .logo{
+        width: 50px;
+    }
+
+    .container-footer p{
+        width: 175px;
+        font-size: smaller;
+        text-align: center;
+    }
+
+    
+    .container-iconos{
+        gap: 5px;
+    }
+    
+    .container-footer img{
+        width: 30px;
+    }
+
+    /* estilos de joinushtml */
+
+    .container-cajas{
+        @include flex2;
+        justify-content: center;
+    }
+
+    .container-cajas{
+        @include width2;
+    }
+
+    
+    .container-cards{
+        width: 90%;
+        height: 600px;
+    }
+
+    /* estilos aboutushtml */
+    .container{
+        @include flex2;
+    }
+
+    .container .caja1{
+        @include width2;
+    }
+    .container .caja2{
+        @include width2;
+    }
+
+    .form label{
+        width: 200px;
+    }
+
+    .form button{
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 20px;
+    }
+
+    .caja-img{
+        margin-top: 600px;
+        height: 200px;
+    }
+
+    .caja3{
+        @include width2;
+        margin-bottom: 75px;
+    }
+
+    .caja3 div{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .info-caja h3{
+        font-size: 15px;
+        font-weight: bolder;
+        color: rgb(84, 187, 206);  ;
+    }
+}

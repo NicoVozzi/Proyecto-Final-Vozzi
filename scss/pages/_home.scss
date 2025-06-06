@@ -1,0 +1,457 @@
+//variables
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+
+/* estilos de navbar */
+
+header nav img{
+    @include width;
+}
+
+.nav-item:hover{
+    @include radius;
+    background-color: $color-button;
+}
+
+.boton-uno{
+    background-color: $color-button;
+    @include radius;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    color: $color-body;
+    @include font;
+}
+
+.boton-uno:hover{
+    @include pointer;
+}
+
+/*estilos de header*/
+
+.caja-hero{
+    background-image: url(/img/gimnasio.jpeg);
+    background-color: $color-principal;
+    position: relative;
+    @include width2;
+    height: 800px;
+    @include hero;
+}
+
+.info-hero{
+    clip-path: polygon(0 0, 100% 0%, 00% 120%, 0 80%);
+    @include width2;
+    height: 500px;
+    background-color: $color-secundario;
+    padding: 2%;
+    color: $color-body;
+}
+
+.boton-dos{
+    @include flex;
+    @include btn-dos
+}
+
+.boton-dos img{
+    height: 25px;
+    width: 25px;
+}
+
+h2{
+    @include margin-top;
+    margin-left: 2%;
+    font-size: 4rem;
+    color: $color-body;
+    font-weight: bolder;
+}
+
+.texto-uno{
+    @include font;
+    color: $color-body;
+    margin-left: 60px;
+    margin-top: 25px;
+}
+
+/* estilos de main */
+.section-uno{
+    @include flex;
+    flex-direction: column;
+    @include margin-top;
+}
+
+.titulo{
+    @include lighter;
+}
+
+.subtitulo{
+    @include margin-top2;
+}
+
+.subtitulo-tres{
+    margin-top:  20px;
+}
+
+.container-uno{
+    display: flex;
+    justify-content: space-evenly;
+    @include margin-top;
+    @include width2;
+}
+
+.ul{
+    @include flex2;
+}
+
+ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.img-uno{
+    @include radius;
+    @include flex3;
+    width: 70%;
+}
+
+ul li img{
+    width: 50px;
+}
+
+.caja-dos{
+    @include flex2;
+    justify-content: center;
+    justify-self: center;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.section-dos{
+    background-color: $color-section;
+    @include margin-top;
+    @include flex2;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container{
+    @include margin-top;
+    @include height;
+    @include width2;
+}
+
+.img-dos{
+    @include height;
+    @include width2;
+    object-fit: cover;
+}
+
+.titulo-dos{
+    @include lighter;
+    @include margin-top;    
+}
+
+.subtitulo-dos{
+    @include margin-top2;
+}
+
+.icono{
+    @include margin-top;
+}
+
+h3{
+    @include margin-top;
+    font-weight: 300;
+}
+
+.section-dos p{
+    @include margin-top;
+    @include margin-bottom;
+    font-size: 1.2rem;
+}
+
+.img-tres{
+    @include width2;
+    max-width: 600px;
+    border-radius: 30px;
+}
+
+/* estilos footer */
+footer{
+    @include margin-top
+}
+
+.container-footer{
+    background-color: $color-principal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+footer div p{
+    @include font2;
+    color: $color-body;
+}
+
+.logo{
+    width: 80px;
+}
+
+.iconos{
+    @include gap;
+    width: 50px;
+}
+
+.iconos:hover{
+    transform: scale(1.1);
+}
+
+.container-iconos{
+    display: flex;
+    @include gap;
+}
+
+/* estilos de join us */
+/* estilos header */
+
+.container-titulo-page{
+    background-color: $color-principal;
+    height: 100px;
+    @include flex;
+    text-align: center;
+}
+
+main div h5{
+    color: $color-body;
+    @include font2;
+    text-align: center;
+    margin-right: 2%;
+}
+
+/* estilos de main */
+.container-cajas{
+    @include flex;
+    @include margin-bottom;
+    @include margin-top;
+    gap: 50px;
+}
+
+.container-cards{
+    @include box-shw;
+    @include radius;
+    @include flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.card-title{
+    color: $color-principal;
+    display: flex;
+    align-items: center;
+}
+
+.container-cards p{
+    color: $color-principal;
+    font-weight: 600;
+}
+
+.container-cards ul li{
+    font-size: 15px;
+    margin: 0;
+    padding: 3%;
+}
+
+.tachado{
+    text-decoration: line-through black;
+    color: gray;
+}
+
+.container-cards button{
+    color: $color-body;
+    background-color: $color-cardsbtn;
+    @include radius;
+    border: none;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.popular{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: crimson;
+    border-radius: 20px;
+    width: 70px;
+    text-align: center;
+}
+
+#plus{
+    background-color: bisque;
+}
+
+/* estilos de about us */
+
+.container{
+    @include grid(grid,1fr 1fr, 1fr 1fr);
+    @include margin-top;
+    gap: 15px;
+    height: 800px;
+}
+
+.caja1{
+    @include box-shw;
+    @include radius;
+    display: flex;
+    padding: 6%;
+    width: 600px;
+    height: 750px;
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.caja1 p{
+    @include font;
+    font-weight: 300;
+}
+
+.caja1 div p span{
+    color: rgb(99, 151, 151);
+}
+
+.caja2{
+    @include width2;
+    @include radius;
+    @include flex;
+    @include box-shw;
+    @include radius;
+    flex-direction: column;
+    max-width: 600px;
+    height: 500px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.caja3{
+    @include radius;
+    @include flex;
+    @include box-shw;
+    flex-direction: column;
+    width: 600px;
+    height: 200px;
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 20px;
+}
+
+.form{
+   @include flex;
+   flex-direction: column;
+}
+
+.form label{
+    @include flex2;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.form label input{
+    padding: 2%;
+    margin-top: 10px;
+}
+
+.form label textarea{
+    padding: 2%;
+    margin-top: 10px;
+}
+
+.caja2 p{
+    color: $color-principal;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.caja2 button{
+    background-color: $color-button;
+    @include font;
+    margin-top: 30px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.caja2 button:hover{
+    @include pointer;
+}
+
+.caja3 p{
+    color: $color-principal;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.caja3 div{
+    @include box-shw;
+    @include flex;
+    @include radius;
+    margin-top: 20px;
+    height: 100px;
+    width: 400px ;
+    gap: 10px;
+}
+
+.caja3 div img{
+    width: 50px;
+}
+
+.caja-img{
+    background-color: $color-principal;
+    @include width2;
+    text-align: center;
+    background-image: url(/img/plancha.avif);
+    position: relative;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-join{
+    @include margin-top;
+    @include width2;
+}
+
+.info-caja{
+    @include width2;
+    @include font2;
+    padding: 2%;
+}
+
+.info-caja span{
+    color: red;
+}
+
+.boton-tres{
+    background-color: $color-button;
+    @include font;
+    border: none;
+     margin-top: 30px;
+    width: 200px;
+    padding: 1%;
+    border-radius: 50px;
+}
+
+.boton-tres:hover{
+    @include pointer;
+}
+
+
