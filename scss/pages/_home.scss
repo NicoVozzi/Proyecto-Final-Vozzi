@@ -30,7 +30,7 @@ header nav img{
 /*estilos de header*/
 
 .caja-hero{
-    background-image: url('/Proyecto-Final-Vozzi/img/gimnasio.jpeg');
+    background-image: url('../img/gimnasio.jpeg');
     background-color: $color-principal;
     position: relative;
     @include width2;

@@ -42,7 +42,7 @@ header nav img {
 
 /*estilos de header*/
 .caja-hero {
-  background-image: url('/Proyecto-Final-Vozzi/img/gimnasio.jpeg');
+  background-image: url('../img/gimnasio.jpeg');
   background-color: #0f5c35;
   position: relative;
   width: 100%;
